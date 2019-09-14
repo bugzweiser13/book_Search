@@ -4,6 +4,7 @@ import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import { Container } from "../../components/Grid";
 import { Input, FormBtn } from "../../components/Form";
+import "./Search.css";
 
 class Search extends Component {
   state = {
@@ -49,8 +50,8 @@ class Search extends Component {
     return (
       <div>
         <Jumbotron>
-          <h1 className="display-4">(React) Google Books Search</h1>
-          <p className="lead">Search for and save books of interest.</p>
+          <h1 className="display-4">Find a Book</h1>
+          <p className="lead" id="subline">Search for and save books of interest.</p>
           <hr className="my-4" />
           <p className="lead">
             <Link className="btn btn-default btn-lg" to="/" role="button">New Search</Link>
